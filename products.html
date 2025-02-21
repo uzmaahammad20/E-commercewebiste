@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - SASA</title>
+    <link rel="stylesheet" href="products.css">
+    <script defer src="products.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><a href="#">SASA</a></h2>
+            <ul class="all-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\diary.webp" alt="Dairy Products">
+                <h3>Dairy Products</h3>
+                <p>Price: ₹100</p>
+                <button class="add-to-cart" data-name="Dairy Products" data-price="100">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\meat.png" alt="Meat & Seafood">
+                <h3>Meat & Seafood</h3>
+                <p>Price: ₹250</p>
+                <button class="add-to-cart" data-name="Meat & Seafood" data-price="250">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\frozen.jpg" alt="Frozen Foods">
+                <h3>Frozen Foods</h3>
+                <p>Price: ₹150</p>
+                <button class="add-to-cart" data-name="Frozen Foods" data-price="150">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\grains.webp" alt="Grains & Cereals">
+                <h3>Grains & Cereals</h3>
+                <p>Price: ₹80</p>
+                <button class="add-to-cart" data-name="Grains & Cereals" data-price="80">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\pantry.webp" alt="Pantry Staples">
+                <h3>Pantry Staples</h3>
+                <p>Price: ₹120</p>
+                <button class="add-to-cart" data-name="Pantry Staples" data-price="120">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\camp stove.jpg" alt="Vegetables">
+                <h3>Vegetables</h3>
+                <p>Price: ₹60</p>
+                <button class="add-to-cart" data-name="Vegetables" data-price="60">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+    </section>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot">
+        <div id="chatbox">
+            <p class="bot-message">Hello! Ask me for your total by typing: "What is my total?"</p>
+        </div>
+        <input type="text" id="user-input" placeholder="Type here..." />
+        <button id="send-btn">Send</button>
+    </div>
+
+    <footer>
+        <p>Copyright © 2025 SASA. All rights reserved.</p>
+    </footer>
+
+    <script defer src="chatbot.js"></script>
+</body>
+</html>

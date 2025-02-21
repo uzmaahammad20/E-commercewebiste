@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <span class="close">&times;</span>
+            <div class="avatar">
+                <img src="C:\Users\UZMA\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\create-responsive-custom-website-html-css\Custom Website HTML and CSS\avatar.avif" alt="User Avatar">
+            </div>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small class="error-message" id="usernameError"></small>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <small class="error-message" id="passwordError"></small>
+
+                <div class="options">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="footer">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <a href="#" class="forgot">Forgot <span>password?</span></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
